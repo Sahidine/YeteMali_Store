@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA3F5AEE-B225-42D5-B1AA-F6DB9E072E05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YeteMali</RootNamespace>
+    <AssemblyName>YeteMali</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caisse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caisse.Designer.cs">
+      <DependentUpon>Caisse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionBilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionBilan.Designer.cs">
+      <DependentUpon>ConnexionBilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnexionSuivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnexionSuivi.Designer.cs">
+      <DependentUpon>ConnexionSuivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionBilanActif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionBilanActif.Designer.cs">
+      <DependentUpon>GestionBilanActif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionBilanPassif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionBilanPassif.Designer.cs">
+      <DependentUpon>GestionBilanPassif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportationBilanActif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportationBilanActif.Designer.cs">
+      <DependentUpon>ImportationBilanActif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportationBilanPassif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportationBilanPassif.Designer.cs">
+      <DependentUpon>ImportationBilanPassif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportationSuivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportationSuivi.Designer.cs">
+      <DependentUpon>ImportationSuivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Importation_Charge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Importation_Charge.Designer.cs">
+      <DependentUpon>Importation_Charge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Importation_Produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Importation_Produit.Designer.cs">
+      <DependentUpon>Importation_Produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeBilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeBilan.Designer.cs">
+      <DependentUpon>ListeBilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeSuivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeSuivi.Designer.cs">
+      <DependentUpon>ListeSuivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuBilan.Designer.cs">
+      <DependentUpon>MenuBilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGeneral.Designer.cs">
+      <DependentUpon>MenuGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSuiviQuotidien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSuiviQuotidien.Designer.cs">
+      <DependentUpon>MenuSuiviQuotidien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PapierTerrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PapierTerrain.Designer.cs">
+      <DependentUpon>PapierTerrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceExploitation\PremierController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceExploitation\PremierController.Designer.cs">
+      <DependentUpon>PremierController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service_PapierTerrain.cs" />
+    <Compile Include="Service_SuiviCaisse.cs" />
+    <Compile Include="StatistiqueSuivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatistiqueSuivi.Designer.cs">
+      <DependentUpon>StatistiqueSuivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuiviQuotidien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuiviQuotidien.Designer.cs">
+      <DependentUpon>SuiviQuotidien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalBilan_Passif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalBilan_Passif.Designer.cs">
+      <DependentUpon>TotalBilan_Passif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalCharge.Designer.cs">
+      <DependentUpon>TotalCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEtatProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionEtatProduit.Designer.cs">
+      <DependentUpon>GestionEtatProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalProduit.Designer.cs">
+      <DependentUpon>TotalProduit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caisse.resx">
+      <DependentUpon>Caisse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionBilan.resx">
+      <DependentUpon>ConnexionBilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnexionSuivi.resx">
+      <DependentUpon>ConnexionSuivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionBilanActif.resx">
+      <DependentUpon>GestionBilanActif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionBilanPassif.resx">
+      <DependentUpon>GestionBilanPassif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportationBilanActif.resx">
+      <DependentUpon>ImportationBilanActif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportationBilanPassif.resx">
+      <DependentUpon>ImportationBilanPassif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportationSuivi.resx">
+      <DependentUpon>ImportationSuivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Importation_Charge.resx">
+      <DependentUpon>Importation_Charge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Importation_Produit.resx">
+      <DependentUpon>Importation_Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeBilan.resx">
+      <DependentUpon>ListeBilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeSuivi.resx">
+      <DependentUpon>ListeSuivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuBilan.resx">
+      <DependentUpon>MenuBilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGeneral.resx">
+      <DependentUpon>MenuGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSuiviQuotidien.resx">
+      <DependentUpon>MenuSuiviQuotidien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PapierTerrain.resx">
+      <DependentUpon>PapierTerrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServiceExploitation\PremierController.resx">
+      <DependentUpon>PremierController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatistiqueSuivi.resx">
+      <DependentUpon>StatistiqueSuivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuiviQuotidien.resx">
+      <DependentUpon>SuiviQuotidien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalBilan_Passif.resx">
+      <DependentUpon>TotalBilan_Passif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalCharge.resx">
+      <DependentUpon>TotalCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionEtatProduit.resx">
+      <DependentUpon>GestionEtatProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalProduit.resx">
+      <DependentUpon>TotalProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hjj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02b08fbbd055b48d45977bafcc7f67c4-d3888k8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar_homme_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lkj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadenat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sqdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hjj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddddds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xcwvxcvcx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xcwvxcvcx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddddds1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\951846-800px_flag_of_canada.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Affiche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-24849_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddddds2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddddds3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadenat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02b08fbbd055b48d45977bafcc7f67c4-d3888k81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-24849_960_7201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2341.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hjj2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hjj3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6457c8f065f103c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importation5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\221.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jkl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpl.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
